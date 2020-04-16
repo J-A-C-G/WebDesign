@@ -1,0 +1,65 @@
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    /*font-size: 16px;*/
+    line-height: 1.7;
+    color: $color-grey-dark;
+}
+
+.header_section {
+    /* 	Las “unidades de longitud porcentuales de ventana de visualización” (viewport-percentage lengths) o más comúnmente llamadas viewport units son unidades css relativas a la ventana gráfica del navegador o visualizador.
+ 	vh (viewport-height) = Altura de la ventana gráfica.
+ 	vw (viewport-width) = Anchura de la ventana gráfica.
+ */
+    height: 95vh;
+
+    /* When you set the position relative to an element, without adding any other positioning attributes (top, bottom, right, left) nothing will happen. When you add an additional position, such as left: 20px the element will move 20px to the right from its normal position. Here, you can see that this element is relative to itself. When the element moves, no other element on the layout will be affected.
+	 */
+    position: relative;
+    background-image: linear-gradient(to right bottom,
+        rgba(126, 213, 111, 0.7),
+        rgba(40, 180, 133, 0.7)),
+        url(../img/hero.jpg);
+
+    /* 	Resize the background image to cover the entire container, even if it has to stretch the image or cut a little bit off one of the edges
+ 	*/
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  }
+
+.header_logo_box {
+    /* This type of positioning allows you to place your element precisely where you want it. The positioning is done relative to the first relatively (or absolutely) positioned parent element. In the case when there is no positioned parent element,
+    it will be positioned related directly to the HTML element (the page itself). */ 
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+}
+
+.header_text_box{
+position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.heading-primary{
+	color: #fff;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 6rem;
+}
+
+.heading-primary-main{
+		display: block;
+        font-size: 6rem;
+        font-weight: 400;
+        letter-spacing: 3.5rem;
+}
+
+.heading-primary-sub{
+	 	display: block;
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 1.75rem;
+}
