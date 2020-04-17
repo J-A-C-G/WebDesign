@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- position: relative -> es al contenido ira creciendo segun el contenido que guarde 
+y las pocision y tamano sera relativo a su contenedor padre -->
+<!-- position absolute ocupara todo el valor asignado en el height y width -->
+<style>
+.contenedor {
+    height: 400px;
+    width: 400px;
+    background-color: #0048d5;
+    position: relative;
+}
+
+.primero {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+.segundo{
+	height: 100px;
+	width: 100px;
+	background-color: red;
+	position: relative;
+	top: 100px;
+	left: 100px;
+}
+
+.tercero{
+	height: 100px;
+	width: 100px;
+	background-color: yellow;
+	position: relative;
+	top: 100px;
+	left: 100px;
+}
+
+.fuente{
+	color: #fff;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Diferencias entre las propiedas position</title>
+</head>
+
+<body>
+    <div class="contenedor fuente">
+        Este es relativo
+        <div class="primero fuente">
+        	Este es relativo
+        </div>
+		<div class="segundo">este es relativo</div>
+
+    </div>
+    <div class="tercero">soy relativo</div>
+</body>
+
+</html>
