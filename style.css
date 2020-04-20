@@ -1,0 +1,71 @@
+/* Aqui vamos a resetear el estilo que tiene el navegador por defecto */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+	
+}
+body{
+	font-family: font-family: Merriweather, Black;
+	background: #282828;
+}
+.contenedor{
+	width:1200px;
+	height: 100vh;
+	background:#e6e6e6;
+	margin: 0 auto;
+	position: relative;
+
+
+}
+.sideBar{
+	height: 2000px;	
+	width: 240px;
+	position: fixed;
+	float: left;
+	background: linear-gradient(90deg, rgba(63,72,255,1) 0%, rgba(46,105,232,1) 0%);
+}
+
+.logo{
+	color: white;
+	font-size: 100pt;
+	font-family: 'Merriweather', serif;
+	font-style: Black 1000;
+	text-shadow: 6px 4px rgba(0, 0, 0, 0.33);
+	padding: 60px 0px 0px 40px;
+	letter-spacing: 16px;
+}
+
+nav{
+	margin-top: 20px;
+}
+
+li{
+	border-bottom: 1px solid #33a9ff;
+	float: right;
+	text-align: center;
+}
+
+a{
+	font-family: 'Anton', serif;
+	font-size: 12pt;
+	color: white;
+	
+	letter-spacing: 2px;
+	display: inline-block;
+	width:220px;
+	padding: 20px 0px 20px 0px;
+
+}
+
+a:hover {
+  background-color: #3287f5;
+  transition: 0.5s;
+  font-size: 14pt
+}
+
+.active{
+	background-color: #2b3863
+}
