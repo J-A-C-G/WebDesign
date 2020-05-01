@@ -1,0 +1,23 @@
+/* root */
+
+*,
+*::after,
+*::before{
+	margin: 0;
+	padding: 0;
+	/* hereda de la etiqueta body */
+	box-sizing: inherit;
+}
+
+
+html{
+	/* font size has to be a 100% becuase the user cna change font browser properties */
+	/* 10/(16 default)=62.5
+	font-size: 10px; */
+	font-size: 62.5%;
+}
+
+body{
+
+	box-sizing: border-box;
+	}
