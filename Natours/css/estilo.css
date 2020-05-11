@@ -35,6 +35,7 @@ $breakpoint argument choices:
     transform: translate(0); } }
 
 /* root */
+
 *,
 *::after,
 *::before {
